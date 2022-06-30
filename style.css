@@ -1,0 +1,102 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("img/pozadina.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover .card-img-top {
+    opacity: 0.1;
+}
+
+.card-img-top {
+    transition: 0.5s all;
+}
+
+.card:hover .opis {
+    display: block;
+}
+
+.opis {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    display: none;
+}
+
+.racun {
+    padding: 1.8em;
+    background-color: white;
+    opacity: 0.9;
+    display: flex;
+    min-height: 30vh;
+    justify-content: space-between;
+    box-shadow: 0 0 5px 0px black;
+    border-radius: 5px;
+}
+
+ul {
+    font-size: 1.8rem;
+    padding: 0 !important;
+    text-align: center;
+    min-width: 19.2vw !important;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 4px;
+    padding: 4px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    position: relative;
+    background-color: rgb(13,110,253);
+    border: 1px solid rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
+    min-width: 19.2vw !important;
+}
+
+ul li span .bi::before {
+    line-height: 28.8px !important;
+}
+
+.obrisi {
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    padding: inherit;
+    top: 0;
+    right: -25px;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    color: rgb(205,38,36);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.obrisi:hover {
+    transform: scale(1.2);
+}
+
+.cijena {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.cijena h5 p {
+    text-align: center;
+}
